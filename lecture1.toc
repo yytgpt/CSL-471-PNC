@@ -1,0 +1,14 @@
+\select@language {english}
+\contentsline {section}{\numberline {1} Puzzle 1. The Monty Hall Problem:}{2}
+\contentsline {section}{\numberline {2}Puzzle 2: The Coin Tossing Show}{3}
+\contentsline {section}{\numberline {3}Lecture 2}{5}
+\contentsline {subsection}{\numberline {3.1}Some interesting math jokes and to be thought about questions}{5}
+\contentsline {subsection}{\numberline {3.2}Online Hiring/ Dating Problem}{6}
+\contentsline {subsubsection}{\numberline {3.2.1}Probability that Algorithm \ref {dating} fetches you the best boy}{7}
+\contentsline {section}{\numberline {4}Lecture 3}{10}
+\contentsline {subsection}{\numberline {4.1}Caesar Cipher}{10}
+\contentsline {subsection}{\numberline {4.2}Substitution Cipher}{10}
+\contentsline {subsubsection}{\numberline {4.2.1}Cryptanalysis}{10}
+\contentsline {subsection}{\numberline {4.3}Vigenere Cipher}{11}
+\contentsline {subsubsection}{\numberline {4.3.1}How does Vigenere Cipher Work}{11}
+\contentsline {subsubsection}{\numberline {4.3.2}Cryptanalysis}{12}

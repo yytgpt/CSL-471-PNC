@@ -1,0 +1,100 @@
+%harihiom
+\documentclass{llncs}
+
+\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{wrapfig}
+%\usepackage{titlepic}
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{graphicx,epstopdf}
+\usepackage{amsmath,amssymb,amsfonts,subfigure}
+\usepackage{comment}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{pifont}
+\usepackage[normalem]{ulem}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{gensymb}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{algorithm}
+\linespread{1}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\newtheorem{claim1}{Claim}
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\usepackage[compatibility=false]{caption}% http://ctan.org/pkg/caption
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}{Lemma}
+
+\title{Tutorial - 1}
+\author{Wednesday, 3 August 2016}
+\institute{To be conducted on: 10 August 2016}
+
+\begin{document}
+\maketitle
+\vspace{5mm}
+\begin{enumerate}
+
+\item Assume a generalised version of the Monty-Hall problem. You are presented with $n$ gates. After choosing one gate out of $n$, Monty shows you $k$ other gates all of which have goats hidden inside them. $k \leq n-2$. After that, you are allowed to swap your choice with one of the $n-(k+1)$ gates. Give the probability of winning and losing assuming: 
+\begin{itemize}
+\item You do not swap the door. 
+\item You swap the door with one of the randomly picked doors from $n-(k+1)$ gates. 
+\end{itemize}
+
+\item Consider a game, where you throw a fair die. If you get a number from $1$ to $5$, you get the number of $\$$ = The number that comes on the die. If die shows $6$, you get $6$ more $\$$ and end the game. What is the expected amount of money you win? Also find the standard deviation.
+
+\item A die is rolled and a coin is tossed alternately. If the coin shows head, the die throw continues else stops. What is the expected sum of the numbers which have appeared on die throughout the game? Also find the standard deviation. Assume the die as well as the coin to be unbiased. 
+
+\item Henry has been caught stealing cattle, and is brought into town for justice. The judge is his ex-wife Gretchen, who wants to show him some sympathy, but the law clearly calls for two shots to be taken at Henry from close range. To make things a little better for Henry, Gretchen tells him she will place two bullets into a six-chambered revolver in successive order. She will spin the chamber, close it, and take one shot. If Henry is still alive, she will then either take another shot, or spin the chamber again before shooting.
+
+Henry is a bit incredulous that his own ex-wife would carry out the punishment, and a bit sad that she was always such a rule follower. He steels himself as Gretchen loads the chambers, spins the revolver, and pulls the trigger. Whew! It was blank. Then Gretchen asks, "Do you want me to pull the trigger again, or should I spin the chamber a second time before pulling the trigger?"
+
+What should Henry choose?
+
+\item ``I'm a very rich man, so I've decided to give you some of my fortune. Do you see this bag? I have 5001 pearls inside it. 2501 of them are white, and 2500 of them are black. No, I am not racist. I'll let you take out any number of pearls from the bag without looking. If you take out the same number of black and white pearls, I will reward you with a number of gold bars equivalent to the number of pearls you took.''
+
+How many pearls should you take out to give yourself a good number of gold bars while still retaining a good chance of actually getting them?
+
+\item A gambler goes to bet. The dealer has $3$ dice, which are fair, meaning that the chance that each face shows up is exactly $1/6$.
+
+The dealer says: ``You can choose your bet on a number, any number from 1 to 6. Then I'll roll the $3$ dice. If none show the number you bet, you'll lose \$1. If one shows the number you bet, you'll win \$1. If two or three dice show the number you bet, you'll win \$3 or \$5, respectively.''
+
+Is it a fair game?
+
+\item My MP3 player is cheap 'n' nasty and has now broken: it is stuck on 'Shuffle'. In this mode it starts with whatever track you put it on, but then plays tracks in a random order. The only restriction is it never plays a song that's already been played that day.
+
+I purchased my favourite murder mystery book in audio format, and put the first 6 chapters on my MP3 player. (Each chapter is exactly 1 track.) There's nothing else on my player at the moment. What is the probability that I will hear the 6 chapters in order as I listen today, without having to change tracks at all? (Obviously, I will ensure it plays chapter 1 first.)
+
+The next day I empty the player before putting on the next 6 chapters. This time I also transfer a CD of mine with 11 songs on. I don't mind songs coming in between the chapters of my book, as long as the chapters are in order. What's the probability of that happening now?
+
+\item Jimbo is an ace goal kicker. On the average, he will kick a goal on 2 out of 3 occasions. Unco on the other hand, will normally only kick a goal on 1 out of 2 occasions.
+Now Jimbo, being quick to spot an opportunity, challenges Unco to a kicking duel. They will each in turn take one kick for goal until a goal is scored. The winner will be the first to score a goal.
+"I'll even give you the first kick", says Jimbo generously to Unco.
+
+What is the probability that Jimbo wins the kicking duel?
+
+\item Consider a company that assembles computers. The probability of a faulty assembly of any computer is p. The company therefore subjects each computer to a testing process.This testing process gives the correct result for any computer with a probability of q. What is the probability of a computer being declared faulty?
+
+\item For each element in a set of size $2n$, an unbiased coin is tossed. The $2n$ coin tosses are independent. An element is chosen if the corresponding coin toss were head. What is the probability that exactly n elements are chosen?
+
+\end{enumerate}
+\end{document}

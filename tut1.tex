@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Department of Computer Science and Engineering, IIT Ropar} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\LARGE Tutorial-1  \\ % The assignment title
+\large CSL-471, Probability and Computing  \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Course Instructor- Dr. Sudarshan Iyengar} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Instructions}
+\begin{enumerate}
+\item This tutorial sheet consists of two parts- i) Instructor picked questions. ii) TA picked questions. You are supposed to attempt both of the parts. 
+\item Every question is marked with a rating- 1*, 2*, 3* or exploratory. * levels indicate the degree of complexity of the question, with 1* questions being the easiest and 3* questions demanding good time of intellectual thinking. Exploratory questions may take any number of days or weeks to be thoroughly attempted. 
+\item The tutorial is to be discussed in the class on August 11, 17:10- 18:00 hrs.
+\item In case of any doubt or query regarding any question, please open a thread in the google group CSL-471 and discuss it. 
+\item Please do not get confused. The rating for every question has been mentioned after the question.
+\end{enumerate}
+
+\newpage
+
+\section{Instructor Picked Questions}
+\begin{enumerate}
+\item Obtain the closed form for the following expression  \\ 
+$$1 + \frac{1}{2} + \frac{1}{3} + ....... + \frac{1}{n}$$ 
+  \begin{flushright}
+\small{(Rating : 3*)}
+\end{flushright} 
+\vspace{1cm}
+
+\item Assume an online hiring company is on a venture of choosing a secretary for the Managing Director of the company. There are $n$ number of applicants. The company follows the following procedure\\
+\begin{itemize}
+\item Pick the first candidate from the applicants' queue (Please note that the applicants are randomly placed in the queue without any sort of criterion).
+\item Hire this candidate. Then, the company looks at the next applicant in the queue. If the next applicant is inferior than the currently hired secretary, she is ignored. But if the next applicant is better than the current secretary, she is hired and the current employee is fired. 
+\item In the similar fashion, the company traverses through the entire queue firing the current secretary on seeing a better option later in the queue (Do you notice that in this scenario, the company will end up hiring the best candidate at the last). 
+\end{itemize}
+Find out the expected number of firings this algorithm leads to.
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright} 
+\vspace{0.2cm}
+
+\item We discussed the German tank problem in the class. We revisit the problem here. During the world war second, the western allies wanted to estimate the number of tanks possessed by the German army. Each of the tank produced by the Germans was marked with a number. The numbers were all consecutive, starting from 1. The alias could see some of the German tanks passing by and hence some of these numbers. The problem was to estimate the number of actual tanks Germans possessed by looking at the sample of the passing by tanks. \\
+
+The question can simply be stated as: Martha has $n$ numbers, She gives you $k$ numbers out of these uniformly at random. By looking at these $k$ numbers, can you find the expected value of $n$.\\
+
+We also discussed a simple solution to this problem in the class. If we pick the maximum number out of these $k$ randomly picked number say $a_k$, we have proved that $E[a_k]=\frac{k}{k+1} (n+1)$. 
+
+Can you now go ahead and find the standard deviation of $a_k$, i.e. $\sigma(a_k)$ ?
+\begin{flushright}
+\small{(Rating : Exploratory)}
+\end{flushright}
+\vspace{0.2cm}
+ 
+\item Recall the online hiring/ dating problem. The solution discussed in the class asks one to look at the first $k$ candidates, reject all of them, while keeping a note of the best one among them. Then, the company starts tracing from the $k+1$th candidate onwards. As soon as we find a person better than the best person seen among first $k$ candidates, we hire this better person and terminate the algorithm. We proved that finding the best candidate is likely if we choose $k=\frac{n}{e}$. This approach expects one to know the number of candidates $n$ beforehand. Give an algorithm to execute online hiring if the number of candidates $n$ is not known in advance. 
+\begin{flushright}
+\small{(Rating : 1*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item We are aware with the Monty Hall problem we discussed in the first lecture of the course. In the original problem, there were $2$ goats and $1$ BMW. Assume now, there are $k$ doors hiding goats and $1$ door having the BMW car. We use the same strategy to play, i.e. swapping after seeing a door with a goat. What is the probability of winning the BMW here? 
+\begin{flushright}
+\small{(Rating : 1*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item Consider a language having a large number of alphabets (By large number, we mean some very big but finite number). Say $L={a_1, a_2, a_3, ......}$. Let probability of occurrence of an alphabet $a_i$, $pr(occurrence\ of\ a_i )\ =\ \frac{1}{2^i}$. If we randomly pick two alphabets from a very big book of this language (obeying the above mentioned frequency distribution), what is the probability that both the picked alphabets are the same (In other words, what is the probability of a collision)? 
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item This question is a very simple variant of the above question. If instead of two alphabets, we pick 3 alphabets uniformly at random, what is the probability that all these three alphabets are the same(again means collision only but between 3 alphabets) ?
+\begin{flushright}
+\small{(Rating : 1*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item Given a binary string of length $n$, what is the expected length of the longest streak of $0$s that one can see? 
+\begin{flushright}
+\small{(Rating : 3*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item The dual dating problem is a very interesting variant of the dating problem. Assume that both the boys and girls are given an equal chance to go ahead and make their choices, then the algorithm proceeds as follows.
+\begin{itemize}
+\item Every girl and every boy goes ahead and checks out random $\frac{n}{e}$ boys and $\frac{n}{e}$ girls respectively and makes a note of the best person they have seen.
+\item After looking at $\frac{n}{e}$ persons, they go on and keep looking at more random people (Not to mention, boys look for girls and vice versa). As soon as a person encounters a better person than their noted one, they select the person. But two persons settle down only if they both select each other. 
+\end{itemize}
+Let the best person in the boys be called the king and the best girl is called the queen.\\
+What is the probability that the king and queen 
+\begin{enumerate}
+\item Meet each other during the course of the game?
+\item Settle down with each other (marry)?
+\end{enumerate}
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item Show that the congruence $x_i \equiv (a x_i - 1 )mod n$ generates all numbers from $0$ to $n-1$, given that $a$ and $n$ are relatively prime. 
+\begin{flushright}
+\small{(Rating : 3*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item In the one time pad algorithm we discussed in the class, the key length was considered equal to the length of the plain text. Assume that the key length is $n/2$ where $n$ is the length of the plaintext. We can replicate the key two times in order to perform ciphering. Comment on whether this encryption is perfectly secure or not ? 
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item Consider the k-permutation cipher. The cipher is very simple. Given a plain text, $p_1, p_2, p_3, p_4, p_5, p_6, ....., p_n$ of length $n$. We divide the plain text in the blocks of size $k$. While encrypting, every block is permuted randomly. \\
+
+Assume $k=4$ in the below example.\\
+
+Plain text : $p_1, p_2, p_3, p_4, | p_5, p_6, p_7, p_8, | .............| p_{n-3}, p_{n-2}, p_{n-1}, p_{n}$\\
+
+Cipher text: $p_3, p_1, p_4, p_2, | p_8, p_7, p_5, p_6, | .............| p_{n-1}, p{n-3}, p_{n-2}, p_{n}$\\
+
+Prove that this cipher is not perfectly secure. 
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+\end{enumerate}
+
+\section{TA picked Questions}
+
+\begin{enumerate}
+
+\item Consider a game, where you throw a fair die. If you get a number from $1$ to $5$, you get the number of $\$$ = The number that comes on the die. If die shows $6$, you get $6$ more $\$$ and end the game. What is the expected amount of money you win? Also find the standard deviation.
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item A die is rolled and a coin is tossed alternately. If the coin shows head, the die throw continues else stops. What is the expected sum of the numbers which have appeared on die throughout the game? Also find the standard deviation. Assume the die as well as the coin to be unbiased. 
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item Consider Caesar cipher. We know that it is breakable in a maximum of $26$ attempts. Can one cipher text in the caesar cipher have 2 plain texts corresponding to it? What is the probability of this happening.
+\begin{flushright}
+\small{(Rating : 2*)}
+\end{flushright}
+\vspace{0.2cm}
+
+\item Answer the above question for substitution cipher.
+\begin{flushright}
+\small{(Rating : 3*)}
+\end{flushright}
+\vspace{0.2cm}
+\end{enumerate}
+
+\end{document}
